@@ -1,0 +1,63 @@
+.colors{
+    color: violet;
+}
+
+.rgb
+{
+    color: rgb(23, 142, 206);
+    /* red,green,blue */
+}
+.hex
+{
+    color: #ff0000;
+    /* #rrggbb */
+}
+
+.rgba
+{
+    color: rgba(255, 0, 0, 0.5);
+    /* red,green,blue,alpha for transparency*/
+
+}
+
+.hsl
+{
+    color: hsl(240, 100%, 50%);
+    /* hue,saturation,lightness
+    0 = red, 120 = green, 240 = blue 
+    0% shade of gray, 100% full color
+    0% -black,50% -gray,100% -white*/
+
+}
+
+.Absolute
+{
+    height: 100px;
+    width: 100px;
+    background-color: #2bb3ca;
+}
+
+.parent{
+    height: 100px;
+    width: 100px;
+    background-color: pink;
+}
+.sibling{
+    height: 50px;
+    width: 50px;
+    background-color: lightblue;
+}
+
+.em{
+    font-size: 2em;
+    /* 1em = current font size */
+}
+
+.remf{
+    font-size: 208px;
+    /* 1rem = root element font size */
+}
+.rems{
+    font-size: 1rem; 
+    /* rem dont care in father element */
+}
