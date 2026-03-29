@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+DK+Uloopet+Guides&display=swap');
+
+.fonts {
+  font-family: "Playwrite DK Uloopet Guides", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
 .colors{
     color: violet;
 }
@@ -61,3 +70,142 @@
     font-size: 1rem; 
     /* rem dont care in father element */
 }
+
+
+/* boxmodel */
+
+.padding{
+    padding: 20px;
+    /* space between content and border */
+}
+.border{
+    border: 2px solid black;
+    /* border around the element */
+}
+.margin{
+    margin: 20px;
+    /* space around the element */
+}                       
+
+/* Class "one" controls color */
+    .one {
+      color: blue;
+    }
+
+    /* Class "two" controls size */
+    .two {
+      font-size: 20px;
+    }
+
+    /* Class "three" controls background */
+    .three {
+      background-color: lightgray;
+      padding: 5px;
+    }
+
+    /* Selector class */
+
+    .parent1 h2{
+        color: red;
+    }
+
+    .parent1 < h4{
+        color: red;
+    }
+
+    .h{
+        color: green;
+    }
+
+    a[href="one"]{
+        color: violet;
+    }
+
+      /* Normal link style */
+    a.demo {
+      color: blue;
+      text-decoration: none;
+      font-size: 18px;
+    }
+
+    /* Pseudo-class :hover */
+    a.demo:hover {
+      color: red;
+      text-decoration: underline;
+    }
+
+    /* Pseudo-class :visited */
+    a.demo:visited {
+      color: purple;
+    }
+
+    /* hover button */
+
+   .btn {
+  background-color: lightgray;
+  color: black;
+  height: 50px;
+  width: 100px;
+  border: none;
+  transition: all 0.3s ease; /* smooth animation */
+  cursor: pointer;
+
+}
+
+.btn:hover {
+  background-color: blue;
+  color: white;
+  transform: scale(1.05); /* subtle grow effect */
+}
+
+
+
+/* POSITIONS */
+.container1 {
+    background:gray;
+    width: 90%;
+    height: 500px;
+    overflow-y: scroll; /* important for sticky to work */
+    position: relative; /* needed for absolute positioning */
+}
+
+.a {
+    height: 100px;
+    width: 100px;
+}
+
+/* Relative */
+.one1 {
+    background-color: black;
+    position: relative;
+    left: 100px;
+    color: white;
+}
+
+/* Absolute */
+.two1 {
+    background-color: blue;
+    position: absolute;
+    left: 100px;
+}
+
+/* Fixed */
+.three1 {
+    background: green;
+    position: fixed;
+    top: 200px;
+    left: 200px;
+    color: yellow;
+}
+
+/* Sticky */
+.four1 {
+    background: violet;
+    position: sticky;
+    top: 0;              /* sticks to the top of container */
+    color: white;
+    width: 100px;
+    height: 100px;
+}
+
+
