@@ -208,4 +208,131 @@
     height: 100px;
 }
 
+/* Flexbox */
 
+.flex{
+    height: 100vh;
+    background:blueviolet ;
+}
+.contain{
+    border: 2px solid white;
+    width: 800px;
+    height: 400px;
+    margin: 2px auto;
+    display: flex;
+}
+
+.contain .child{
+    width: 50px;
+    height: 50px;
+    background: blue;
+    text-align: center;
+    /* flex-direction: column-reverse; */
+    /* flex-direction: column-reverse; */
+    flex-direction: row;
+    justify-content: flex-end; /* Ctrl + space to see other options */
+
+
+    margin: 10px;
+}
+
+/* Flexwrap */
+
+.senior{
+     border: 2px solid white;
+    width: 800px;
+    height: 400px;
+    margin: 2px auto;
+    display: flex;
+}
+
+.senior .childs{
+    width: 50px;
+    height: 50px;
+    background: blue;
+    text-align: center;
+    margin: 2px;
+flex-wrap: nowrap;/* Ctrl + space to see other options */
+align-items: flex-start;
+}
+
+/* is( */
+
+  /* Inline style block for pseudo selectors */
+    :is(p, div) {
+      font-weight: bold;
+    }
+
+/* :before and :after demo */
+  .before-after-demo::before {
+      content: "★ Before ";
+      color: red;
+    }
+    .before-after-demo::after {
+      content: " After ★";
+      color: green;
+    }
+    /* :not() selector */
+      ul li:not(.special) {
+      background: lightyellow;
+    }
+    ul li.special {
+      background: lightgray;
+    }
+
+    /* Animation */
+
+    /* Fade In */
+    .fade-in {
+      opacity: 0;
+      animation: fadeIn 2s forwards;
+    }
+    @keyframes fadeIn {
+      to { opacity: 1; }
+    }
+
+    /* Slide In */
+    .slide-in {
+      transform: translateX(-100%);
+      animation: slideIn 1.5s forwards;
+    }
+    @keyframes slideIn {
+      to { transform: translateX(0); }
+    }
+
+    /* Bounce */
+    .bounce {
+      animation: bounce 2s infinite;
+    }
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-20px); }
+    }
+
+    /* Rotate */
+    .rotate {
+      display:inline-block;
+      animation: rotate 3s linear infinite;
+    }
+    @keyframes rotate {
+      to { transform: rotate(360deg); }
+    }
+
+    /* Pulse */
+    .pulse {
+      animation: pulse 2s infinite;
+    }
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+    }
+
+    /* Container styling */
+    .demo-box {
+      display:inline-block;
+      margin:20px;
+      padding:20px;
+      background:lightblue;
+      border-radius:8px;
+      font-weight:bold;
+    }
